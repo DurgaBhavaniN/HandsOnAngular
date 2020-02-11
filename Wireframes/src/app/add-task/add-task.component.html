@@ -1,0 +1,26 @@
+<div>
+    <table align="center">
+        
+        <tr>
+            <td>Task:</td>
+            <td><input type="text" [(ngModel)]="name"></td>
+        </tr>
+        <tr>
+            <td>Priority:</td>
+            <td><input type="range" [(ngModel)]="priority" max='100' min='0'></td>
+        </tr>
+        <tr>
+            <td>Start Date:</td>
+            <td><input type="date" [(ngModel)]="startdate"></td>
+        </tr>
+        <tr>
+            <td>End Date:</td>
+            <td><input type="date" [(ngModel)]="enddate"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><button (click)="addtask()" class="btn btn-primary">Add Task</button> </td>
+            <td><button (click)="Reset()" class="btn btn-primary">Reset</button></td>
+        </tr>
+    </table>
+</div>
