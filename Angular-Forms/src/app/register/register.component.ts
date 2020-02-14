@@ -36,5 +36,6 @@ onSubmit(){
 onReset(){
   this.submitted=false;
   this.registerForm.reset(); 
+  
 }
 }
